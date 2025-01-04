@@ -5,7 +5,7 @@ jobs:
       - image: cimg/node:23.5.0
     steps:
      - run: node --version
-     - run: pwd
+     - run: echo "Current working directory is: $CIRCLE_WORKING_DIRECTORY"
 workflows:
   wf-001:
     jobs:
