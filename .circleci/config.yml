@@ -10,7 +10,9 @@ jobs:
      - run:
          name: "Print Current Working Directory of Circle CI Project"
          command: echo $CIRCLE_WORKING_DIRECTORY
-     - run: echo "Printing Current Working Directory of Circle CI using pwd" 
+     - run: 
+         name: "Printing present working directory"
+         command: pwd
        
          
        
