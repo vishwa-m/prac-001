@@ -4,7 +4,7 @@ jobs:
     docker: 
       - image: cimg/node:23.5.0
     steps:
-     - run: mvn -version
+     - run: node --version
 workflows:
   wf-001:
     jobs:
