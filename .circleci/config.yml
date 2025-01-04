@@ -5,3 +5,7 @@ jobs:
       - image: cimg/node:23.5.0
     steps:
      - run: mvn -version
+workflows:
+  wf-001:
+    jobs:
+      - node-job
