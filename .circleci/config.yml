@@ -1,11 +1,12 @@
 version: 2.1
 jobs:
-  node-job:
+  node-version-job:
     docker: 
       - image: cimg/node:23.5.0
     steps:
      - run: node --version
+     - run: pwd
 workflows:
   wf-001:
     jobs:
-      - node-job
+      - node-version-job
