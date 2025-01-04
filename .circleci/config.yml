@@ -1,1 +1,7 @@
-
+version: 1.21
+jobs:
+  node-job:
+    docker: 
+      - image: cimg/node:23.5.0
+    steps:
+     - run: mvn -version
